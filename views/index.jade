@@ -2,9 +2,12 @@ extends layout
 
 block content
   h1= title
+  p Welcome to #{title}
   if views
-    p Welcome to #{title}, #{views} views
+    p #{views} views
+    a(href="/") Count + 1
+    br
+    br
     a(href="/reset") Reset count
   else
-    p Welcome to #{title}, 0 views
     a(href="/") Start counting

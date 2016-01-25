@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/reset', function(req, res, next) {
   res.clearCookie("views");
-  res.render('index', { title: 'Express' });
+  res.redirect('/');
 });
 
 module.exports = router;
