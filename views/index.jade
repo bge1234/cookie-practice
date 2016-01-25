@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  if views
+    p Welcome to #{title}, #{views} views
+    a(href="/reset") Reset count
+  else
+    p Welcome to #{title}, 0 views
+    a(href="/") Start counting
